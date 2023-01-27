@@ -43,13 +43,6 @@
         </li> %>
       </ul>
       <ul class="navbar-nav">
-      <li>
-        <% if current_user %>
-        Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
-        <% else %>
-        <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/users/new' %>
-        <% end %>
-      </li>  
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle text-danger"
@@ -70,6 +63,13 @@
           <%= link_to cart_path, class: "nav-link " do %> <%= fa_icon "shopping-cart" %>
           My Cart (<%= cart.size %>) <% end %>
         </li>
+        <li class="logging">
+        <% if current_user %>
+        Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout', class: "logging" %>
+        <% else %>
+        <%= link_to raw("&nbsp;Login&nbsp;&nbsp;"), '/login', class: "logging" %> | <%= link_to raw('&nbsp;&nbsp;Signup'), '/users/new', class: "logging" %>
+        <% end %>
+      </li>  
       </ul>
     </div>
   </div>
