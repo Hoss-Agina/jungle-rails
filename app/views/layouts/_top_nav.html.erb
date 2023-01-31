@@ -65,7 +65,7 @@
         </li>
         <li class="logging">
         <% if current_user %>
-        Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout', class: "logging" %>
+        Signed in as <%= current_user.first_name %> | <%= link_to "Logout", '/logout', class: "logging" %>
         <% else %>
         <%= link_to raw("&nbsp;Login&nbsp;&nbsp;"), '/login', class: "logging" %> | <%= link_to raw('&nbsp;&nbsp;Signup'), '/users/new', class: "logging" %>
         <% end %>
