@@ -31,3 +31,7 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Stripe
 
 ## Final Product
+
+!["carts page"](https://github.com/Hoss-Agina/jungle-rails/blob/master/docs/carts_page.png?raw=true)
+!["products page"](https://github.com/Hoss-Agina/jungle-rails/blob/master/docs/products_page.png?raw=true)
+!["Signup page"](https://github.com/Hoss-Agina/jungle-rails/blob/master/docs/signup_page.png?raw=true)
